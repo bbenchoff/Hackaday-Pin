@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.000455" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -26,12 +26,12 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -3737,11 +3737,11 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="TindieBadge" package="BK-916" value="1220BATTERY" x="24.231375" y="13.01948125" rot="MR0"/>
-<element name="U$2" library="TindieBadge" package="SWITCH-SSSS810701" value="ALPSSLIDESW" x="12.19875" y="30.148634375" rot="MR42"/>
-<element name="U$3" library="TindieBadge" package="LAPELPIN" value="LAPELPIN" x="24.169065625" y="28.53185" rot="MR0"/>
-<element name="D3" library="SparkFun-LED" package="LED_5MM" value="" x="19.263690625" y="21.020384375"/>
-<element name="D4" library="SparkFun-LED" package="LED_5MM" value="" x="29.253359375" y="21.020384375" rot="R180"/>
+<element name="U$1" library="TindieBadge" package="BK-916" value="1220BATTERY" x="24.231375" y="13.01948125" smashed="yes" rot="MR0"/>
+<element name="U$2" library="TindieBadge" package="SWITCH-SSSS810701" value="ALPSSLIDESW" x="12.19875" y="30.148634375" smashed="yes" rot="MR42"/>
+<element name="U$3" library="TindieBadge" package="LAPELPIN" value="LAPELPIN" x="24.169065625" y="28.53185" smashed="yes" rot="MR0"/>
+<element name="D3" library="SparkFun-LED" package="LED_5MM" value="" x="19.263690625" y="21.020384375" smashed="yes"/>
+<element name="D4" library="SparkFun-LED" package="LED_5MM" value="" x="29.253359375" y="21.020384375" smashed="yes" rot="R180"/>
 </elements>
 <signals>
 <signal name="N$4">
@@ -3853,48 +3853,52 @@ design rules under a new name.</description>
 <contactref element="D4" pad="A"/>
 <contactref element="U$2" pad="2"/>
 <polygon width="0.1524" layer="16">
-<vertex x="12.46986875" y="32.809034375"/>
-<vertex x="14.79796875" y="35.137134375"/>
-<vertex x="18.226625" y="31.740228125"/>
-<vertex x="19.17903125" y="31.560328125"/>
-<vertex x="20.290175" y="31.549746875"/>
-<vertex x="21.083840625" y="32.38574375"/>
-<vertex x="24.089209375" y="32.5550625"/>
-<vertex x="25.61305625" y="32.533896875"/>
-<vertex x="27.30621875" y="32.11060625"/>
-<vertex x="29.2216125" y="31.782553125"/>
-<vertex x="30.72429375" y="30.36453125"/>
-<vertex x="31.92009375" y="29.27455625"/>
-<vertex x="33.20054375" y="27.591978125"/>
-<vertex x="34.883128125" y="25.549596875"/>
-<vertex x="35.073609375" y="23.05218125"/>
-<vertex x="35.264090625" y="20.85106875"/>
-<vertex x="35.200596875" y="18.819271875"/>
-<vertex x="34.967784375" y="18.057346875"/>
-<vertex x="34.80905" y="16.268940625"/>
-<vertex x="33.655584375" y="15.263628125"/>
-<vertex x="33.528596875" y="14.41704375"/>
-<vertex x="33.570925" y="16.448840625"/>
-<vertex x="30.353915625" y="16.448840625"/>
-<vertex x="30.353915625" y="18.226665625"/>
-<vertex x="30.33275" y="18.395978125" curve="36.870067"/>
-<vertex x="30.385659375" y="18.724028125" curve="-20.610517"/>
-<vertex x="29.48616875" y="19.835165625" curve="-19.839487"/>
-<vertex x="29.528496875" y="20.766409375"/>
-<vertex x="29.507334375" y="21.020384375"/>
-<vertex x="29.507334375" y="21.866965625"/>
-<vertex x="29.507334375" y="22.120940625" curve="90"/>
-<vertex x="28.999384375" y="22.628890625"/>
-<vertex x="19.517665625" y="22.628890625" curve="90"/>
-<vertex x="19.009715625" y="22.120940625"/>
-<vertex x="18.882728125" y="20.427771875"/>
-<vertex x="18.755740625" y="18.9885875"/>
-<vertex x="15.8773625" y="18.9885875"/>
-<vertex x="15.866375" y="24.160471875"/>
-<vertex x="20.406165625" y="28.722240625"/>
-<vertex x="15.638284375" y="33.360684375"/>
-<vertex x="11.493753125" y="29.086621875"/>
-<vertex x="10.152353125" y="30.38569375"/>
+<vertex x="11.557" y="31.623"/>
+<vertex x="12.446" y="30.734"/>
+<vertex x="12.954" y="30.734"/>
+<vertex x="15.494" y="33.274"/>
+<vertex x="15.748" y="33.274"/>
+<vertex x="20.2565" y="28.7655"/>
+<vertex x="15.875" y="24.384"/>
+<vertex x="15.875" y="18.923"/>
+<vertex x="19.05" y="18.923"/>
+<vertex x="19.05" y="22.225"/>
+<vertex x="19.304" y="22.479"/>
+<vertex x="29.083" y="22.479"/>
+<vertex x="29.21" y="22.352"/>
+<vertex x="29.21" y="20.828"/>
+<vertex x="29.337" y="20.701"/>
+<vertex x="29.337" y="19.685"/>
+<vertex x="30.226" y="18.796"/>
+<vertex x="30.226" y="16.51"/>
+<vertex x="30.353" y="16.383"/>
+<vertex x="30.607" y="16.383"/>
+<vertex x="30.734" y="16.256"/>
+<vertex x="30.734" y="15.748"/>
+<vertex x="33.274" y="15.748"/>
+<vertex x="33.274" y="13.716"/>
+<vertex x="33.401" y="13.589"/>
+<vertex x="33.528" y="13.589"/>
+<vertex x="33.655" y="13.716"/>
+<vertex x="35.306" y="17.272"/>
+<vertex x="35.687" y="18.161"/>
+<vertex x="35.814" y="18.923"/>
+<vertex x="35.941" y="19.939"/>
+<vertex x="35.941" y="22.225"/>
+<vertex x="35.56" y="23.749"/>
+<vertex x="35.179" y="25.146"/>
+<vertex x="34.544" y="26.162"/>
+<vertex x="32.512" y="28.956"/>
+<vertex x="31.496" y="29.972"/>
+<vertex x="29.718" y="31.496"/>
+<vertex x="28.448" y="32.131"/>
+<vertex x="26.162" y="32.893"/>
+<vertex x="24.511" y="33.147"/>
+<vertex x="22.987" y="32.893"/>
+<vertex x="21.336" y="32.512"/>
+<vertex x="19.939" y="31.877"/>
+<vertex x="19.423209375" y="31.748053125"/>
+<vertex x="15.18221875" y="35.55031875"/>
 </polygon>
 </signal>
 <signal name="GND1">
@@ -3903,13 +3907,14 @@ design rules under a new name.</description>
 <contactref element="D4" pad="K"/>
 <polygon width="0.1524" layer="1">
 <vertex x="18.419625" y="31.12714375"/>
-<vertex x="19.83144375" y="31.396671875"/>
-<vertex x="20.64023125" y="32.25385"/>
-<vertex x="20.94384375" y="32.256240625"/>
-<vertex x="24.3879375" y="32.60065"/>
-<vertex x="25.5309375" y="32.47365"/>
-<vertex x="27.3089375" y="32.0609"/>
-<vertex x="29.3409375" y="31.64815"/>
+<vertex x="19.304" y="31.75"/>
+<vertex x="20.03711875" y="32.116559375"/>
+<vertex x="20.08544375" y="32.031671875"/>
+<vertex x="20.4248125" y="32.39134375"/>
+<vertex x="24.103696875" y="32.75923125"/>
+<vertex x="26.580309375" y="32.48404375"/>
+<vertex x="27.3089375" y="32.3149"/>
+<vertex x="29.01249375" y="31.968865625"/>
 <vertex x="30.6903125" y="30.330525"/>
 <vertex x="31.8333125" y="29.314525"/>
 <vertex x="33.2144375" y="27.64765"/>
@@ -3931,7 +3936,6 @@ design rules under a new name.</description>
 <vertex x="29.6108125" y="8.073775"/>
 <vertex x="28.7059375" y="8.1214"/>
 <vertex x="27.9121875" y="8.200775"/>
-<vertex x="27.3565625" y="8.835775"/>
 <vertex x="26.9120625" y="9.343775"/>
 <vertex x="26.5469375" y="9.29615"/>
 <vertex x="26.0389375" y="9.16915"/>
